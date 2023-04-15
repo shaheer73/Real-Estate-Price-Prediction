@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GTA Real Estate Price Prediction</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+        <link rel='icon' href="https://em-content.zobj.net/thumbs/120/apple/354/house-with-garden_1f3e1.png">
+        <link rel='apple-touch-icon' href="https://em-content.zobj.net/thumbs/120/apple/354/house-with-garden_1f3e1.png">
+    </head>
+    
+    <body>
+        <div class="img"></div>
+        <h2 class="title">GTA Real Estate Price Prediction</h2>
+        <form class="form">
+            <h2>Area (Sq. Feet)</h2>
+            <input class="area" type="email" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+            <h2># of Bedrooms</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bed-1" name="uiBed" value="1">
+                <label for="radio-bed-1">1</label>
+                <input type="radio" id="radio-bed-2" name="uiBed" value="2">
+                <label for="radio-bed-2">2</label>
+                <input type="radio" id="radio-bed-3" name="uiBed" value="3">
+                <label for="radio-bed-3">3</label>
+                <input type="radio" id="radio-bed-4" name="uiBed" value="4">
+                <label for="radio-bed-4">4</label>
+                <input type="radio" id="radio-bed-5" name="uiBed" value="5">
+                <label for="radio-bed-5">5</label>
+            </div>
+            <h2># of Bathrooms</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1">
+                <label for="radio-bath-1">1</label>
+                <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2">
+                <label for="radio-bath-2">2</label>
+                <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3">
+                <label for="radio-bath-3">3</label>
+                <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4">
+                <label for="radio-bath-4">4</label>
+                <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5">
+                <label for="radio-bath-5">5</label>
+            </div>
+        
+        <h2>Locations</h2>
+        <div>
+            <select class="location" name="" id="uiLocations">
+                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                <option>Toronto</option>
+            </select>
+        </div>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+        <div class="result" id="uiEstimatedPrice"> <h2></h2> </div>
+    </form>
+    </body>
+</html>
